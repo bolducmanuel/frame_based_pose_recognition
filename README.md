@@ -2,13 +2,13 @@
 
 This directory contains all the scripts necessary to train and execute pose recognition based on frame extraction from a live video feed. 
 
-### ![*Recognition example after training on the Y, M, C, A, and wandering poses*](https://gitlab.com/sat-mtl/metalab/collabmomentfactory/-/tree/main/PoC%201%20:%20motion%20detection%20and%20representation/pose_gesture_recognition/videos/YMCA.gif)
+### ![*Recognition example after training on the Y, M, C, A, and wandering poses*](/videos/YMCA.gif)
 
  The work presented in this directory is based on [dongdv95's hand-gesture-recognition repository](https://github.com/dongdv95/hand-gesture-recognition/tree/main), and makes use of the [mediapipe pose detection framework](https://developers.google.com/mediapipe/solutions/vision/pose_landmarker).
 
 ### *pose landmark model from Mediapipe:*
  
-![pose landmarker model](https://developers.google.com/static/mediapipe/images/solutions/pose_landmarks_index.png){width=30%}
+<img src="https://developers.google.com/static/mediapipe/images/solutions/pose_landmarks_index.png" width="300">
 
  ## WorkFlow
 

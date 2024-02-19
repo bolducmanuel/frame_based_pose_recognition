@@ -13,6 +13,7 @@ This directory contains all the scripts necessary to train and execute pose reco
 ## Installation and Requirements
 
 Requirements to run the scripts in this repository can be found in the requirements.txt file
+
  ```pip install -r requirements.txt```
 
 Training is done in a [Jupyter Notebook](https://jupyter.org/install). To install Jupyter Notebook, run:
@@ -20,11 +21,12 @@ Training is done in a [Jupyter Notebook](https://jupyter.org/install). To instal
 ``` pip install notebook```
 
 To run the notebook: 
+
 ```jupyter notebook```
 
  ## WorkFlow
 
-![YMCA_Training_Screen_Record.mp4](videos/YMCA_Training_Screen_Record.mp4)
+A complete overview of the workflow can be found here: [YMCA_Training_Screen_Record.mp4](https://drive.google.com/file/d/1l2UBEHdw_zLc1qw7xDSGqm8vdqysauXE/view?usp=sharing)
 
 - A) We use the get_image.py script to generate the image dataset. The image dataset is divided in subfolders, each containing pictures of a person in the specified position. To generate the example above, we trained the 5 following data classes : "Y", "M", "C", "A", "wandering". Each data class contains about 65 pictures.
 

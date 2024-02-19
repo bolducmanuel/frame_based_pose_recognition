@@ -34,7 +34,6 @@ with mp_pose.Pose(smooth_landmarks=True) as pose:
       #    if i in accepted_keypoints:
             clean.append(float(landmark.x))
             clean.append(float(landmark.y))
-            clean.append(float(landmark.visibility))
 
 
       # for i in without_garbage:
@@ -42,7 +41,7 @@ with mp_pose.Pose(smooth_landmarks=True) as pose:
       #     clean.append(i[2:])
 
     except:
-      clean = np.zeros([1,99], dtype=int)
+      clean = np.zeros([1,66], dtype=int)
 
     #print(clean)
     # Draw the hand annotations on the image.
@@ -50,7 +49,7 @@ with mp_pose.Pose(smooth_landmarks=True) as pose:
     image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
      
     clean = np.array(clean)
-    y_pred = svm.predict(clean.reshape(-1,99))
+    y_pred = svm.predict(clean.reshape(-1,66))
     print(y_pred)
     # font
     font = cv2.FONT_HERSHEY_SIMPLEX

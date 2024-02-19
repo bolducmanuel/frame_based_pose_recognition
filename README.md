@@ -10,7 +10,21 @@ This directory contains all the scripts necessary to train and execute pose reco
  
 <img src="https://developers.google.com/static/mediapipe/images/solutions/pose_landmarks_index.png" width="300">
 
+## Installation and Requirements
+
+Requirements to run the scripts in this repository can be found in the requirements.txt file
+ ```pip install -r requirements.txt```
+
+Training is done in a [Jupyter Notebook](https://jupyter.org/install). To install Jupyter Notebook, run:
+
+``` pip install notebook```
+
+To run the notebook: 
+```jupyter notebook```
+
  ## WorkFlow
+
+![YMCA_Training_Screen_Record.mp4](videos/YMCA_Training_Screen_Record.mp4)
 
 - A) We use the get_image.py script to generate the image dataset. The image dataset is divided in subfolders, each containing pictures of a person in the specified position. To generate the example above, we trained the 5 following data classes : "Y", "M", "C", "A", "wandering". Each data class contains about 65 pictures.
 
@@ -20,8 +34,5 @@ This directory contains all the scripts necessary to train and execute pose reco
 
 - D) Once training is done, we can run the main script, pose_gesture_recog.py. This script takes webcam frames as input by default, so we can assess the detection time it takes for the model to recognize poses on live stream, and whether the detection is accurate or not.
 
-## Requirements
-
-TODO
 
 
